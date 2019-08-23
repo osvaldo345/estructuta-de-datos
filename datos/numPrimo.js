@@ -1,11 +1,11 @@
-var cantidad = document.querySelector("#numero");
-var btn = document.querySelector("#btnAgregar");
+var numero = document.querySelector("#numero");
+var btnAgregar = document.querySelector("#btnAgregar");
 
-btn.addEventListener("click",numPrimo);
+btnAgregar.addEventListener("click",numPrimo);
 
 
 function numPrimo(){
-    let valor =Number(cantidad.value);
+    let valor =Number(numero.value);
     for(var i = 2; i<= valor; i++){
         if(i%2 === 0){
             if(i ===2){

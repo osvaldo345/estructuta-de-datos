@@ -5,38 +5,38 @@ var sueldo = document.querySelector("#sueldo");
 var resultado = document.querySelector("#resultado");
 
 function calcularSueldo(){
-    let s = Number(sueldo.value);
+    let newS = Number(sueldo.value);
     let porcentaje = 0;
     let res = resultado;
     let r = 0;
-    if (s >0 && s <=1000) {
-        porcentaje= s * 0.15;
-        r = s + porcentaje;
-        res.innerHTML= "tu sueldo es de:"+ r + " aumentando un 15%";
+    if (newS >0 && newS <=1000) {
+        porcentaje= newS * 0.15;
+        r = newS + porcentaje;
+        res.innerHTML= "tu sueldo es de:"+ r + " con un 15%";
         
     }
-    if (s >1000 && s <=1200) {
-        porcentaje= s * 0.12;
-        r = s + porcentaje;
-        res.innerHTML= "tu sueldo es de:"+ r + " aumentando un 12%";
+    if (newS >1000 && newS <=1200) {
+        porcentaje= newS * 0.12;
+        r = newS + porcentaje;
+        res.innerHTML= "tu sueldo es de:"+ r + " con un 12%";
         
     }
-    if (s >1200 && s <=1400) {
-        porcentaje= s * 0.10;
-        r = s + porcentaje;
-        res.innerHTML= "tu sueldo es de:"+ r + " aumentando un 10%"
+    if (newS >1200 && newS <=1400) {
+        porcentaje= newS * 0.10;
+        r = newS + porcentaje;
+        res.innerHTML= "tu sueldo es de:"+ r + " con un 10%"
         
     }
-    if (s >1400 && s <=1500) {
-        porcentaje= s * 0.8;
-        r = s + porcentaje;
-        res.innerHTML= "tu sueldo es de:"+ r + " aumentando un 8%"
+    if (newS >1400 && newS <=1500) {
+        porcentaje= newS * 0.08;
+        r = newS + porcentaje;
+        res.innerHTML= "tu sueldo es de:"+ r + " con un 8%"
         
     }
-    if (s >1500) {
-        porcentaje= s * 0.5;
-        r = s + porcentaje;
-        res.innerHTML= "tu sueldo es de:"+ r + "  aumentando un 5%"
+    if (newS >1500) {
+        porcentaje= newS * 0.05;
+        r = newS + porcentaje;
+        res.innerHTML= "tu sueldo es de:"+ r + "  con un 5%"
         
     }
     
