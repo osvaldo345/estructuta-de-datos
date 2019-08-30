@@ -1,25 +1,43 @@
 class Dado{
     constructor(){
-            this._cara = [1,2,3,4,5,6];
 
-    } 
+            var corredor2 = 0;
+            
+
+    }  
+    
         lanzar(){
-            return this._cara;
+            
+            return Math.trunc(Math.random() * 6 +1);
         }
-    }
-    function contar (){
-        for(let i=0; i<100; i++){
-            tiro1.lanzar();
-            let c = 0;
-            c = tiro1.lanzar();
-            c[this._cara -1]++;
-        }
-    return c;
-
     }
     let tiro1 = new Dado();
-        tiro1._cara = Math.trunc(Math.random(this._cara) * 6 +1);
-        console.log(tiro1.lanzar());
-    
 
+        var corredor1 = 0;
+
+
+        for(let i=0; i<100; i++){
+            tiro1.lanzar();
+            let numero = tiro1.lanzar();
+            if (numero === 1){
+                corredor1 += 3;
+            }
+                if(numero === 2){
+                    corredor1 += 1;
+            }
+            if(numero === 3){
+                corredor1 += 1; 
+                }
+                if(numero === 4){
+                    corredor1 += 2; 
+                    }
+                    if(numero === 5){
+                        corredor1 += 2; 
+                        }
+                        if(numero === 6){
+                            corredor1 += 2; 
+                            }
+            console.log(corredor1);
+    }
     
+        console.log(tiro1.lanzar());
