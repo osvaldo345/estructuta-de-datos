@@ -10,20 +10,17 @@ class Numero {
         
     }
 
-    _numericamente(a, b) {
-        if (a.nums < b.nums) {
-            return -1;
+    numericamente(a, b) {
+        this._nums.sort(function compare(a, b) {return a - b})
+        for(var i=1; i<100; i++){
+            console.log(this._nums[i]);
         }
-        if (a.nums > b.nums) {
-            return 1;
         }
-        return 0;
-    }
-    _num() {
-        this._nums.sort(this._numericamente);
-    }
-
 }
+
+
+
+
 let numero = new Numero();
-console.log((numero.Crear()));
-console.log((numero._num()));
+numero.Crear();
+console.log(numero.numericamente());
